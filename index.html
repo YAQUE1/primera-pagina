@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mi primera pagina</title> 
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/11c0d14c24.js" crossorigin="anonymous"></script> <!--ICONO DE CORAZON-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!--LINK LETRA-->
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One:ital@1&family=PT+Serif&family=Playfair+Display:ital,wght@0,500;1,500&family=Roboto+Condensed:ital,wght@0,400;0,600;1,300&family=Roboto:wght@400;500&family=Rubik:wght@300&display=swap" rel="stylesheet"> <!--link letra-->
+    <script src="script.js"></script> <!---------LINK JAVA--------->
+</head>
+<body>
+    <header>
+        <a href="index.html"><i class="fa-solid fa-heart"></i></a>
+    <div class="container">
+            <Nav>
+                <input type="checkbox" id="check" />
+        <label for="check" class="checkbtn">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+                <ul>
+                    <li> <a href="index.html"target="blank">Inicio</a></li>
+                    <li> <a href="#">Acerca de mi</a></li>
+                    <li> <a href="#">trabajos</a></li>
+                    <li> <a href="#">servicios</a></li>
+                </ul>
+            </Nav>
+        </header>
+        <main id="seccion-principal">
+            <section class="seccion-1">
+                <div class="Acerca-de">
+                    <h2>Acerca de mi</h2>
+                    <p class="parrafo1">¡Bienvenidos a mi pagina! Aqui aprenderas mas sobre mi.</p>
+                    <p class="parrafo2">"Me llamo Yaqueline, nací en Colombia y vivo en Medellín. Me gusta la música y salir a pasear en días de sol. Me encantaría aprender a programar para poder ayudar a las personas a mostrar lo que hacen."</p>
+                    <P class="parrafo3">Estoy iniciando en el mundo de la programación,deseo poder desarrollar muchos proyectos. Aqui les muestro uno de mis primeros proyectos, espero que les guste.</P>
+                </div>
+                <div class="acerca-imagen">
+                    <img src="img/FOTOS DE PERFIL 2.jpg" alt="imagen-personal" width="150px" height="200px" /> 
+                </div>
+            </section>
+            <section class="seccion-2">
+                <img src="img/MEDELLIN-NOCHE.jpg" alt="ciudad de Medellín" width="700px" height="300px" />
+                </div>
+            </section>
+        </main>
+        <!--aqui van las tarjetas--> 
+         <div class="mas sobre mi"><h2>MAS SOBRE MI</h2></div>
+        <div class="card-container">
+            <div class="card">
+                <img src="img/PC-ESCRITORIO.jpg" alt="código"><div class="card-contenido">
+                    </div>
+                    <h3>mi sueño es ser Programdora</h3>
+                    <p>Quiero estudiar y lograr mi sueño de ser una gran Programadora, poder crear muchos proyectos.
+                    Y ya inicie con este gran sueño y objetivo, creo que nunca es tarde para empezar y lograr lo que nos proponemos.
+                    </p>
+                    <a href="https://egg.live/es-co/"target="blank" class="btn">Leer mas</a>
+                </div>
+            </div>
+        </div>
+        <div class="card-container">
+            <div class="card">
+                <img src="img/hero.jpg" alt="código"><div class="card-contenido">
+                    <h3>SOY MAMÁ</h3>
+                    <p>Soy mamá de una niña y un niño y he estado ahí siempre en su crecimiento guiandolos en su educación, pero creo que no es impedimento para que una mujer quiera salir adelante y desarrollarse como persona. Yo quiero educarme para darles un mejor bienestar y sentirme mejor como persona y mujer que soy.  
+                    </p>
+                    <a href="#" class="btn">Leer mas</a>
+                </div>
+            </div>
+        </div>
+        <div class="card-container">
+            <div class="card">
+                <img src="img/musica.jpg" alt="código"><div class="card-contenido">
+                    <h3>LA MÚSICA</h3>
+                    <p>Me gusta mucho escuchar música en mis tiempos libres mis géneros favoritos son, el rock y las baladas románticas, unas de mis canciones favoritas son música ligera de Soda Esterio y también me gusta mucho la música de Luis Miguel y de Ricardo Arjona. Y son TIM RBD…
+                    </p>
+                    <a href="https://www.youtube.com/watch?v=R8INNlqMJeE&list=PLGvc7vBpP5wbmDoIVeewVa7Zd2G6aYy6L"target="blank"class="btn">Leer mas</a>
+                </div>
+            </div>
+        </div>
+        <!--terminan las cards-->
+        <!--FORMULARIO-->
+        <footer class="form-header">
+            <h1>Contacto</h1>
+            <p><em>¡Esperamos tu consulta!</em></p>
+      
+            <form action="" method="get" class="formulario" id="form">
+              <div class="form-row">
+                <label for="nombre">Nombre:</label>
+                <input id="nombre" name="nombre" type="text" />
+              </div>
+              <div class="form-row">
+                <label for="email">Email:</label>
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  placeholder="pepe@gmail.com"
+                  required
+                />
+              </div>
+              <div class="form-row">
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje"></textarea>
+              </div>
+              <div class="form-row">
+                <button type="submit" id="alertas">Enviar</button>
+                <p class="alertas" id="alertas"></p>
+              </div>
+            </form>
+          </footer>
+      
+          <script src="script.js"></script>
+        <footer> <h3>contacto</h3>
+            <ul>
+                <li><a href="#">contacto</a></li>
+                <li><a href="#">facebook</a></li>
+                <li><a href="#">TikTok</a></li>
+                <li><a href="daianarestre621@gmail.com"target="blank">correo</a></li>
+            </ul>
+        </footer>      
+    </div>  
+</body>
+</html>
