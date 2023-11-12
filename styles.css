@@ -1,95 +1,35 @@
-
-body {background-color:#bdbdbd;
-   font-family: 'Alumni Sans Collegiate One', sans-serif;
-font-family: 'Playfair Display', serif;
-font-family: 'PT Serif', serif;
-font-family: 'Roboto', sans-serif;
-font-family: 'Roboto Condensed', sans-serif;
-font-family: 'Rubik', sans-serif;
+body {
+   color: black;
+   background-color: #eaedf0;
+   font-family: "Helvetica", "Arial", sans-serif;
+   font-size: 16px;
+   text-align: center;
    margin: 0em;
    padding: 0em;
-   }
-
-  
-
-ol,
-ul {
-   list-style: none;
-
 }
 
-
-a {text-decoration: none;
-}
-
-
+/* ------- Encabezado ------- */
 header {
-   background-color:black; 
+   background-color: black;
    display: flex;
-   align-items:center;
+   align-items: center;
    justify-content: center;
    flex-wrap: wrap;
    padding: 10px;
-}
-header {
    box-sizing: border-box;
 }
-
 
 header a i {
    color: red;
    font-size: 5em;
    padding: 0.15em;
-   
 }
-
-
 
 header nav ul {
    display: flex;
    gap: 1.1em;
    text-align: center;
-   }
-
-
-   header nav ul {
-   color:white;
-   }
-
-
-   .seccion-1 {
-   background-color:darkgrey;
-   display: flex;
-   justify-content:center;
-   align-items:center;
-   box-sizing: border-box;
-   padding: 4%;
-   margin: 10px;
-   text-decoration: none;
-   list-style: type none;
-   }
-.seccion-2 img {
-   width: 100%;
-   height: 500px;
-   margin: 10px;
-   padding: 0;
-}
-footer {
-   background-color:black;
-   color: gray;
-}
-
-
-footer {
-   clear: both;
-   width: 100%;
-   text-align: center;
-   padding: 25px;
-}
-
-/*MENU */
-#check {
-   display: none;
+   color: white;
 }
 
 .checkbtn {
@@ -102,89 +42,74 @@ footer {
    display: none;
 }
 
-/*media queries */
+nav {
+   display: flex;
+}
 
-/* Estilos para pantallas mas pequeñas (hasta 768px) */
+/* ------- Media Queries para Pantallas más Pequeñas ------- */
 @media (max-width: 768px) {
-   /* Aquí puedes escribir los estilos que se aplicarán en pantallas más
-pequeñas */
-header {
-   background-color:#333;
+   header {
+       background-color: #333;
+   }
+
+   .checkbtn {
+       display: block;
+   }
+
+   #encabezado ul {
+       position: fixed;
+       width: 100%;
+       height: 100vh;
+       background: #2c3e50;
+       text-align: center;
+       top: 80px;
+       left: 100%;
+       transition: all 0.5s;
+   }
+
+   #check:checked ~ ul {
+       left: 0%;
+       display: block;
+   }
+
+   #encabezado nav ul li {
+       display: block;
+       margin: 50px 0;
+       line-height: 30px;
+   }
+
+   #encabezado nav ul li a {
+       font-size: 20px;
+   }
+
+   #check:checked ~ .checkbtn {
+       color: #2c3e50;
+   }
 }
 
-.acerca-de {
-   text-align: center;
-}
-
-.acerca-imagen {
-   margin-bottom: 40px;
-}
-
-h2.fuente-acento {
-   text-align: center;
-}
-
-.checkbtn {
-   display: block;
-}
-
-#encabezado ul {
-   position: fixed;
-   width: 100%;
-   height: 100vh;
-   background: #2c3e50;
-   text-align: center;
-
-   top: 80px;
-   left: 100%;
-   transition: all0.5s;
-}
-
-#check:checked ~ ul {
-   left: 0%;
-   display: block;
-}
-
-#encabezado nav ul li {
-   display: block;
-   margin: 50px 0;
-   line-height: 30px;
-}
-
-#encabezado nav ul li a  {
-   font-size: 20px;
-}
-
-#check:checked ~ .checkbtn {
-   color: #2c3e50;
-}
-}
-
-
-
-
-/*CARDS*/
-
+/* ------- Cards ------- */
 .section-id .h3 {
    text-align: center;
 }
+
 .card-container {
    display: flex;
-   justify-content: center;
    flex-wrap: wrap;
+   justify-content: space-around;
    margin: 10px;
    align-items: center;
    min-height: 100vh;
-   padding: 0px 90px;
+   padding: 0px 20px;
 }
 
 .card {
-   width: 325PX;
+   flex: 1 0 calc(30% - 20px);
    background-color: #f0f0f0;
-   border-radius: 8PX;
+   border-radius: 8px;
    overflow: hidden;
    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.2);
    margin: 20px;
+   max-width: 300px;
 }
 
 .card img {
@@ -193,17 +118,17 @@ h2.fuente-acento {
 }
 
 .card-contenido {
-   padding: 16px; 
+   padding: 20px;
 }
 
 .card-contenido h3 {
-   font-size: 28px;
+   font-size: 18px;
    margin-bottom: 8px;
 }
 
 .card-contenido p {
    color: #666;
-   font-size: 15px;
+   font-size: 14px;
    line-height: 1.3;
 }
 
@@ -215,64 +140,17 @@ h2.fuente-acento {
    border-radius: 4px;
    margin-top: 16px;
    color: #fff;
-
 }
 
-/*768px > dispositivos medianos > 1004px dispositivos grandes*/
-
-/* ------------- CSS General ------------- */
-/*-------FORMULARIO------*/
-* {
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box;
- }
- 
- body {
-   color: black; 
-   background-color: #eaedf0;
-   font-family: "Helvetica", "Arial", sans-serif;
-   font-size: 16px;
-   text-align: center;
- }
- 
- /* ------------- Encabezado Contacto ------------- */
- 
- footer {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
- }
- 
- .form-header {
-   text-align: center;
+/* ------- Formulario ------- */
+.formulario {
    background-color: #f6f7f8;
    border: 1px solid #d6d9dc;
-   border-radius: 3px;
- 
-   width: 80%;
-   margin: 10px auto;
-   padding: 50px;
- }
- 
- .form-header h1 {
-   font-size: 30px;
-   margin-bottom: 20px;
- }
- 
- /* ------------- Formulario ------------- */
- 
- .formulario {
-   background-color:#f6f7f8;
-   border: 1px solid  #d6d9dc;
    border-radius: 4px;
- 
    width: 50%;
    padding: 20px;
    margin: 20px 0 40px 0;
- }
-
- /* ------------- Campos del Formulario ------------- */
+}
 
 .form-row {
    margin-bottom: 40px;
@@ -280,109 +158,109 @@ h2.fuente-acento {
    justify-content: flex-start;
    flex-direction: column;
    flex-wrap: wrap;
- }
- 
- .form-row input[type="text"] {
-   background-color:pink;
+}
+
+.form-row input[type="text"],
+.form-row input[type="email"] {
+   background-color: #bdbdbd;
    border: 0;
    border-radius: 6px;
    width: 100%;
    padding: 7px;
    font-size: 14px;
- }
- 
- .form-row label {
+}
+
+.form-row label {
    margin-bottom: 3px;
    text-align: initial;
- }
-
- /* ------------- Para Pantallas de más de 700px ------------- */
-@media only screen and (min-width: 700px) {
-   .form-header {
-     padding: 50px;
-   }
- 
-   .form-row {
-     flex-direction: row;
-     align-items: flex-start;
-     margin-bottom: 20px;
-   }
-   .form-row input[type="text"] {
-     width: 250px;
-     height: initial;
-   }
-   .form-row label {
-     text-align: right;
-     width: 120px;
-     margin-top: 7px;
-     padding-right: 20px;
-   }
- }
-.form-row input [type= "nombre"],
-.form-row input [type= "email"] {
-   background-color:  #bdbdbd;
-   border: 0;
-   border-radius: 6px;
-   width: 100%;
-   padding: 7px;
-   font-size: 14px;
 }
 
 .form-row textarea {
    font-family: "Helvetica", "Arial", sans-serif;
    font-size: 14px;
-
-
-   background-color:pink;
+   background-color: pink;
    border: 0;
    border-radius: 6px;
-
-
    min-height: 200px;
    margin-bottom: 10px;
    padding: 7px;
    resize: none;
-   
-
-
    width: 100%;
 }
- /* ------------- Para Pantallas de más de 700px ------------- */
 
-.form-row textarea {
-   width: 250px;
+/* Para Pantallas de más de 700px */
+@media only screen and (min-width: 700px) {
+   .form-header {
+       padding: 50px;
+   }
+
+   .form-row {
+       flex-direction: row;
+       align-items: flex-start;
+       margin-bottom: 20px;
+   }
+
+   .form-row input[type="text"] {
+       width: 250px;
+       height: initial;
+   }
+
+   .form-row label {
+       text-align: right;
+       width: 120px;
+       margin-top: 7px;
+       padding-right: 20px;
+   }
+
+   .form-row textarea {
+       width: 250px;
    }
 
    .form-row button {
        font-size: 16px;
        font-weight: bold;
-   
-   
        color: #ffffff;
-       background-color:#5995da;
-   
-   
+       background-color: #5995da;
        border: none;
        border-radius: 3px;
-   
-   
        padding: 10px 40px;
        cursor: pointer;
    }
-   
-   
+
    .form-row button:hover {
        background-color: #76aeed;
    }
-   
-   
+
    .form-row button:active {
        background-color: #407fc7;
    }
-   
-   
-     /* ------------- Para Pantallas de más de 700px ------------- */
-   
-   
-   .form-row button {
-       margin-left: 120px; }
+}
+
+/* ------- Footer ------- */
+footer {
+   background-color: black;
+   color: gray;
+   clear: both;
+   width: 100%;
+   text-align: center;
+   padding: 25px;
+}
+
+footer h3 {
+   margin: 0;
+}
+
+footer ul {
+   list-style: none;
+   padding: 0;
+}
+
+footer ul li {
+   display: inline;
+   margin-right: 10px;
+}
+
+footer a {
+   color: gray;
+   text-decoration: none;
+}
